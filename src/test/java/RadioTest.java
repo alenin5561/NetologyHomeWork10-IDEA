@@ -3,6 +3,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
+
+
     @Test
     // тест на проверку текущего канала
     public void shouldSetCurrentChanel() {
@@ -18,7 +20,6 @@ public class RadioTest {
 
     }
 
-
     @Test
     //тест переключения канала по возрастанию
     public void shouldNextChanelIfPressNext1() {
@@ -33,7 +34,8 @@ public class RadioTest {
     }
 
     //тест на верхнюю границу
-    public void upBorderNext() {
+    @Test
+     public void upBorderNext1() {
         Radio chanel = new Radio();
 
         chanel.setChanel(9);
@@ -43,7 +45,6 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
 
     @Test
     //тест переключения каналов по убыванию
@@ -60,7 +61,7 @@ public class RadioTest {
 
     @Test
     //тест на нижнюю границу
-    public void lowBorderPrev() {
+    public void lowBorderPrev1() {
         Radio chanel = new Radio();
 
         chanel.setChanel(0);
@@ -70,22 +71,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
     @Test
-    //тест на проверку доступнеости каналов
-    public void shouldNewChanel1() {
-        Radio chanel = new Radio();
-
-        chanel.setChanel(8);
-
-        int expected = 8;
-        int actual = chanel.currentChanel;
-
-        Assertions.assertEquals(expected, actual);
-    }
-    @Test
-    //тест на проверку нижней границы каналов
-    public void lowBorderChanel1() {
+    //тест на нижнюю границы каналов
+    public void lowBorderPrev2() {
         Radio chanel = new Radio();
 
         chanel.setChanel(-1);
@@ -97,17 +85,30 @@ public class RadioTest {
     }
 
     @Test
-    //тест на проверку верхней границы каналов
-    public void upBorderChanel2() {
+    //тест на проверку доступнеость каналов
+    public void shouldNewChanel1() {
+        Radio chanel = new Radio();
+
+        chanel.setChanel(8);
+
+        int expected = 8;
+        int actual = chanel.getCurrentChanel();
+
+        Assertions.assertEquals(expected, actual);
+    }
+    @Test
+    //тест на проверку доступнеость каналов
+    public void shouldNewChanel2() {
         Radio chanel = new Radio();
 
         chanel.setChanel(10);
 
         int expected = 0;
-        int actual = chanel.currentChanel;
+        int actual = chanel.getCurrentChanel();
 
         Assertions.assertEquals(expected, actual);
     }
+
 
 
     @Test
@@ -124,7 +125,7 @@ public class RadioTest {
     }
 
     @Test
-    //тест установки уровня громкости по возрастанию
+    //тест переключения уровня громкости по возрастанию
     public void shouldHighVolumeIfPressIncrease() {
         Radio chanel = new Radio();
 
@@ -137,8 +138,8 @@ public class RadioTest {
     }
 
     @Test
-    //тест на границу установки уровня громкости по возрастанию
-    public void upBorderVolum() {
+    //тест на границу уровня громкости по возрастанию
+    public void upBorderVolume() {
         Radio chanel = new Radio();
 
         chanel.setVolume(10);
@@ -150,21 +151,47 @@ public class RadioTest {
     }
 
     @Test
-    //тест установки уровня громкости  по убыванию
-    public void shouldLowVolumeIfPressDecrease() {
+    //тест на переключение уровня громкости  по убыванию
+    public void shouldLowVolumeIfPressDecrease1() {
+        Radio chanel = new Radio();
+
+        chanel.setVolume(4);
+
+        int expected = 3;
+        int actual = chanel.decreaseVolume();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    //тест на границу уровня громкости  по убыванию
+    public void lowBorderVolume1() {
         Radio chanel = new Radio();
 
         chanel.setVolume(0);
 
         int expected = 10;
-        int actual = chanel.decreasingVolume();
+        int actual = chanel.decreaseVolume();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    ////тест на границу уровня громкости  по убыванию
+    @Test
+    public void lowBorderVolume2() {
+        Radio chanel = new Radio();
+
+        chanel.setVolume(-1);
+
+        int expected = 0;
+        int actual = chanel.currentVolume;
 
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
     //тест на проверку доступнеости уровней громкости
-    public void shouldNewVolume() {
+    public void setNewVolume() {
         Radio chanel = new Radio();
 
         chanel.setVolume(7);
@@ -175,6 +202,32 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
 
+    }
+
+    @Test
+    //тест на верхнюю границу допустимых уровней грромкости
+    public void setVolumeAboveTheBorder() {
+        Radio chanel = new Radio();
+
+        chanel.setVolume(11);
+
+        int expected = 0;
+        int actual = chanel.getCurrentVolume();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    //тест на нижнюю границу допустимых уровней грромкости
+    public void setVolumeBelowTheBorder() {
+        Radio chanel = new Radio();
+
+        chanel.setVolume(-1);
+
+        int expected = 0;
+        int actual = chanel.getCurrentVolume();
+
+        Assertions.assertEquals(expected, actual);
     }
 }
 

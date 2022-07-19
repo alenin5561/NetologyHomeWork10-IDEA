@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c43a0b9d-9e0a-410e-933e-4ff10f228cca" name="Changes" comment="Радио работает (Настройка JAcoco)">
+    <list default="true" id="c43a0b9d-9e0a-410e-933e-4ff10f228cca" name="Changes" comment="Радио работает (Покрытие кода)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Radio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RadioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,11 +70,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldNextChanelIfPressNext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.upBorderNext1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NetologyHomework10" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldNextChanelIfPressNext" />
+      <option name="METHOD_NAME" value="upBorderNext1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadioTest.upBorderNext2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NetologyHomework10" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RadioTest" />
+      <option name="METHOD_NAME" value="upBorderNext2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadioTest.upBorderVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NetologyHomework10" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RadioTest" />
+      <option name="METHOD_NAME" value="upBorderVolume" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,8 +103,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RadioTest" />
+        <item itemvalue="JUnit.RadioTest.upBorderNext2" />
+        <item itemvalue="JUnit.RadioTest.upBorderNext1" />
+        <item itemvalue="JUnit.RadioTest.upBorderVolume" />
         <item itemvalue="JUnit.RadioTest.shouldNewVolume" />
-        <item itemvalue="JUnit.RadioTest.shouldNextChanelIfPressNext" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658211407972</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Радио работает (Покрытие кода)">
+      <created>1658241254459</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658241254459</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,6 +179,22 @@
     <MESSAGE value="Git" />
     <MESSAGE value="Радио работает" />
     <MESSAGE value="Радио работает (Настройка JAcoco)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Радио работает (Настройка JAcoco)" />
+    <MESSAGE value="Радио работает (Покрытие кода)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Радио работает (Покрытие кода)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/RadioTest.java</url>
+          <line>141</line>
+          <properties class="RadioTest" method="upBorderVolume">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

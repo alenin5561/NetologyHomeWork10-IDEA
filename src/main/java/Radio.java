@@ -4,15 +4,26 @@ public class Radio {
     public int currentChanel;
     //объявлем поле для хранения текущего прослушиваемого канала
 
+    public int getCurrentChanel(){
+
+        return currentChanel;
+    }
+    //поле для запроса данных о текущем канале
+
+    public int getCurrentVolume(){
+        return currentVolume;
+    }
+    //поле для запроса данных о текущем уровне громкости
+
     //поле всех каналов
 
     //метод для переключения каналов по возрастанию
     public int next() {
-        if (currentChanel < 9) {
+        if (currentChanel <9) {
             currentChanel++;
         }
         else {
-            currentChanel=0;
+            return currentChanel=0;
         }
         return currentChanel;
     }
@@ -57,7 +68,7 @@ public class Radio {
     }
 
     //метод для установки уровня громкости по убыванию
-    public int decreasingVolume() {
+    public int decreaseVolume() {
         if (currentVolume <= 10) {
             currentVolume--;
         }
