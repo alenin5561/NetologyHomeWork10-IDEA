@@ -4,10 +4,6 @@ public class Radio {
     public int currentChanel;
     //объявлем поле для хранения текущего прослушиваемого канала
 
-    public int getChanel(){
-        return currentChanel;
-    }
-
     //поле всех каналов
 
     //метод для переключения каналов по возрастанию
