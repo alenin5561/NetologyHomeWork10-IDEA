@@ -31,7 +31,7 @@ public class Radio {
 
     //метод для переключения каналов по убыванию
     public int prev() {
-        if (currentChanel <= 9) {
+        if (currentChanel < 9) {
             currentChanel--;
         }
         if (currentChanel <0){
@@ -69,7 +69,7 @@ public class Radio {
 
     //метод для установки уровня громкости по убыванию
     public int decreaseVolume() {
-        if (currentVolume <= 10) {
+        if (currentVolume < 10) {
             currentVolume--;
         }
         if (currentVolume <0){
