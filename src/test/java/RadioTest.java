@@ -13,7 +13,7 @@ public class RadioTest {
         chanel.setChanel(2);
 
         int expected = 2;
-        int actual = chanel.currentChanel;
+        int actual = chanel.getCurrentChanel();
 
         Assertions.assertEquals(expected, actual);
 
@@ -79,7 +79,7 @@ public class RadioTest {
         chanel.setChanel(-1);
 
         int expected = 0;
-        int actual = chanel.currentChanel;
+        int actual = chanel.getCurrentChanel();
 
         Assertions.assertEquals(expected, actual);
     }

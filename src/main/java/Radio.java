@@ -1,16 +1,16 @@
 
 public class Radio {
-
     public int currentChanel;
+
     //объявлем поле для хранения текущего прослушиваемого канала
 
-    public int getCurrentChanel(){
+    public int getCurrentChanel() {
 
         return currentChanel;
     }
     //поле для запроса данных о текущем канале
 
-    public int getCurrentVolume(){
+    public int getCurrentVolume() {
 
         return currentVolume;
     }
@@ -20,11 +20,10 @@ public class Radio {
 
     //метод для переключения каналов по возрастанию
     public int next() {
-        if (currentChanel <9) {
+        if (currentChanel < 9) {
             currentChanel++;
-        }
-        else {
-            return currentChanel=0;
+        } else {
+            return currentChanel = 0;
         }
         return currentChanel;
     }
@@ -35,7 +34,7 @@ public class Radio {
         if (currentChanel < 9) {
             currentChanel--;
         }
-        if (currentChanel <0){
+        if (currentChanel < 0) {
             return 9;
         }
         return currentChanel;
@@ -61,8 +60,7 @@ public class Radio {
     public int increaseVolume() {
         if (currentVolume < 10) {
             currentVolume++;
-        }
-        else {
+        } else {
             currentVolume = 0;
         }
         return currentVolume;
@@ -73,7 +71,7 @@ public class Radio {
         if (currentVolume < 10) {
             currentVolume--;
         }
-        if (currentVolume <0){
+        if (currentVolume < 0) {
             return 10;
         }
         return currentVolume;
