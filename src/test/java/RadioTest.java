@@ -10,9 +10,9 @@ public class RadioTest {
     public void shouldSetCurrentChanel() {
         Radio chanel = new Radio();
 
-        chanel.setChanel(1);
+        chanel.setChanel(2);
 
-        int expected = 1;
+        int expected = 2;
         int actual = chanel.currentChanel;
 
         Assertions.assertEquals(expected, actual);
