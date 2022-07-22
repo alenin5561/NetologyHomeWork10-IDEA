@@ -10,7 +10,7 @@ public class RadioTest {
     public void shouldSetCurrentChanel() {
         Radio chanel = new Radio();
 
-        chanel.currentChanel = 1;
+        chanel.setChanel(1);
 
         int expected = 1;
         int actual = chanel.currentChanel;

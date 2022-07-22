@@ -11,6 +11,7 @@ public class Radio {
     //поле для запроса данных о текущем канале
 
     public int getCurrentVolume(){
+
         return currentVolume;
     }
     //поле для запроса данных о текущем уровне громкости
