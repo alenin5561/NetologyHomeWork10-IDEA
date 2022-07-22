@@ -103,9 +103,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RadioTest" />
+        <item itemvalue="JUnit.RadioTest.upBorderVolume" />
         <item itemvalue="JUnit.RadioTest.upBorderNext2" />
         <item itemvalue="JUnit.RadioTest.upBorderNext1" />
-        <item itemvalue="JUnit.RadioTest.upBorderVolume" />
         <item itemvalue="JUnit.RadioTest.shouldNewVolume" />
       </list>
     </recent_temporary>
@@ -189,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658515769700</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Радио работает (Покрытие 100%)">
+      <created>1658517927599</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1658517927599</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

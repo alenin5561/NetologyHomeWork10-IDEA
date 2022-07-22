@@ -1,7 +1,7 @@
 
 public class Radio {
-    public int currentChanel;
 
+int currentChanel;
     //объявлем поле для хранения текущего прослушиваемого канала
 
     public int getCurrentChanel() {
@@ -55,13 +55,15 @@ public class Radio {
 
     public int currentVolume;
     //поле для текущей уровня громкости
+    public int maxVolume = 10;
+    public int minVolume = 0;
 
     //метод для установки уровня громкости по возрастанию
     public int increaseVolume() {
         if (currentVolume < 10) {
             currentVolume++;
-        } else {
-            currentVolume = 0;
+        }else {
+            return currentVolume = maxVolume;
         }
         return currentVolume;
     }
@@ -72,21 +74,14 @@ public class Radio {
             currentVolume--;
         }
         if (currentVolume < 0) {
-            return 10;
+            return minVolume= 0;
         }
         return currentVolume;
     }
 
     //объявляем поле для установки уровня громкости в диапозоне от 0 до 9
     public void setVolume(int newVolume) {
-        if (newVolume < 0) {
-            return;
-        }
-        if (newVolume > 10) {
-            return;
-        }
         currentVolume = newVolume;
     }
 
 }
-
