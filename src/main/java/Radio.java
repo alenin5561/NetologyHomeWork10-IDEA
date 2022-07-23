@@ -1,17 +1,7 @@
 
 public class Radio {
 
-    private int minChanel = 0;
-    private int maxChanel = 10;
-    private int currentChanel = minChanel;
-
-    //Создаем конструктор для установки нового количества радиостаниций
-    public Radio (int minChanel, int maxChanel){
-        this.minChanel = minChanel;
-        this.maxChanel = maxChanel;
-        this.currentChanel = minChanel;
-
-    }
+  public int currentChanel;
 
 
     public int getCurrentChanel() {
@@ -19,6 +9,15 @@ public class Radio {
         return currentChanel;
     }
     //поле для запроса данных о текущем канале
+
+    public int maxChanel=9;
+    public int minChanel=10;
+    public int getMaxChanel(){
+        return maxChanel;
+    }
+    public int getMinChanel(){
+        return  minChanel;
+    }
 
 
     //метод для переключения каналов по возрастанию

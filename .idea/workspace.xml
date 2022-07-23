@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c43a0b9d-9e0a-410e-933e-4ff10f228cca" name="Changes" comment="Радио работает (Покрытие 100%)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Volume.java" afterDir="false" />
+    <list default="true" id="c43a0b9d-9e0a-410e-933e-4ff10f228cca" name="Changes" comment="Модификация системы">
+      <change afterPath="$PROJECT_DIR$/src/main/java/RadioChanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Radio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RadioTest.java" afterDir="false" />
@@ -23,6 +23,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="flexible" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -216,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658547422589</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Модификация системы">
+      <created>1658549014068</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1658549014068</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,7 +250,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="flexible" />
                       </list>
                     </value>
                   </entry>
@@ -248,17 +268,17 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="flexible" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="main" />
                 </option>
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="HEAD" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="flexible" />
                 </option>
               </RecentGroup>
             </list>
@@ -273,6 +293,7 @@
     <MESSAGE value="Радио работает (Настройка JAcoco)" />
     <MESSAGE value="Радио работает (Покрытие кода)" />
     <MESSAGE value="Радио работает (Покрытие 100%)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Радио работает (Покрытие 100%)" />
+    <MESSAGE value="Модификация системы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Модификация системы" />
   </component>
 </project>

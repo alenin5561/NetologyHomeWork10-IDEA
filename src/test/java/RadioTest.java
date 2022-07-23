@@ -4,11 +4,18 @@ import org.junit.jupiter.api.Test;
 
 public class RadioTest {
 
+    @Test
+    //тест на установку нового количества каналов
+    public void shouldSetNewChanelNumber() {
+        RadioChanel chanel = new RadioChanel(0, 24);
+
+        Assertions.assertEquals(24, chanel.getMaxChanel());
+    }
 
     @Test
     // тест на проверку текущего канала
     public void shouldSetCurrentChanel() {
-        Radio chanel = new Radio(0, 9);
+        Radio chanel = new Radio();
 
         chanel.setChanel(2);
 
@@ -23,7 +30,7 @@ public class RadioTest {
     @Test
     //тест переключения канала по возрастанию
     public void shouldNextChanelIfPressNext1() {
-        Radio chanel = new Radio(0, 9);
+        Radio chanel = new Radio();
 
         chanel.setChanel(6);
 
@@ -36,7 +43,7 @@ public class RadioTest {
     //тест на верхнюю границу
     @Test
     public void upBorderNext1() {
-        Radio chanel = new Radio(0, 9);
+        Radio chanel = new Radio();
 
         chanel.setChanel(9);
 
@@ -49,7 +56,7 @@ public class RadioTest {
     @Test
     //тест переключения каналов по убыванию
     public void shouldPreviousChanelIfPressPrevious1() {
-        Radio chanel = new Radio(0, 9);
+        Radio chanel = new Radio();
 
         chanel.setChanel(4);
 
@@ -62,7 +69,7 @@ public class RadioTest {
     @Test
     //тест на нижнюю границу
     public void lowBorderPrev1() {
-        Radio chanel = new Radio(0, 9);
+        Radio chanel = new Radio();
 
         chanel.setChanel(0);
 
@@ -75,7 +82,7 @@ public class RadioTest {
     @Test
     //тест на нижнюю границы каналов
     public void lowBorderPrev2() {
-        Radio chanel = new Radio(0, 9);
+        Radio chanel = new Radio();
 
         chanel.setChanel(-1);
 
@@ -88,7 +95,7 @@ public class RadioTest {
     @Test
     //тест на проверку доступнеость каналов
     public void shouldNewChanel1() {
-        Radio chanel = new Radio(0, 9);
+        Radio chanel = new Radio();
 
         chanel.setChanel(8);
 
@@ -101,7 +108,7 @@ public class RadioTest {
     @Test
     //тест на проверку доступнеость каналов
     public void shouldNewChanel2() {
-        Radio chanel = new Radio(0, 9);
+        Radio chanel = new Radio();
 
         chanel.setChanel(10);
 
@@ -141,7 +148,7 @@ public class RadioTest {
     @Test
     //тест на границу уровня громкости по возрастанию
     public void upBorderVolume() {
-        Volume sound = new Volume(0,100);
+        Volume sound = new Volume(0, 100);
 
         sound.setVolume(100);
 
