@@ -1,8 +1,18 @@
 
 public class Radio {
 
-int currentChanel;
-    //объявлем поле для хранения текущего прослушиваемого канала
+    private int minChanel = 0;
+    private int maxChanel = 10;
+    private int currentChanel = minChanel;
+
+    //Создаем конструктор для установки нового количества радиостаниций
+    public Radio (int minChanel, int maxChanel){
+        this.minChanel = minChanel;
+        this.maxChanel = maxChanel;
+        this.currentChanel = minChanel;
+
+    }
+
 
     public int getCurrentChanel() {
 
@@ -10,13 +20,6 @@ int currentChanel;
     }
     //поле для запроса данных о текущем канале
 
-    public int getCurrentVolume() {
-
-        return currentVolume;
-    }
-    //поле для запроса данных о текущем уровне громкости
-
-    //поле всех каналов
 
     //метод для переключения каналов по возрастанию
     public int next() {
@@ -52,36 +55,5 @@ int currentChanel;
         currentChanel = newChanel;
     }
 
-
-    public int currentVolume;
-    //поле для текущей уровня громкости
-    public int maxVolume = 10;
-    public int minVolume = 0;
-
-    //метод для установки уровня громкости по возрастанию
-    public int increaseVolume() {
-        if (currentVolume < 10) {
-            currentVolume++;
-        }else {
-            return currentVolume = maxVolume;
-        }
-        return currentVolume;
-    }
-
-    //метод для установки уровня громкости по убыванию
-    public int decreaseVolume() {
-        if (currentVolume < 10) {
-            currentVolume--;
-        }
-        if (currentVolume < 0) {
-            return minVolume= 0;
-        }
-        return currentVolume;
-    }
-
-    //объявляем поле для установки уровня громкости в диапозоне от 0 до 9
-    public void setVolume(int newVolume) {
-        currentVolume = newVolume;
-    }
 
 }

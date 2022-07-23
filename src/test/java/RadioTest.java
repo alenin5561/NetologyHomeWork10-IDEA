@@ -8,7 +8,7 @@ public class RadioTest {
     @Test
     // тест на проверку текущего канала
     public void shouldSetCurrentChanel() {
-        Radio chanel = new Radio();
+        Radio chanel = new Radio(0, 9);
 
         chanel.setChanel(2);
 
@@ -23,7 +23,7 @@ public class RadioTest {
     @Test
     //тест переключения канала по возрастанию
     public void shouldNextChanelIfPressNext1() {
-        Radio chanel = new Radio();
+        Radio chanel = new Radio(0, 9);
 
         chanel.setChanel(6);
 
@@ -36,7 +36,7 @@ public class RadioTest {
     //тест на верхнюю границу
     @Test
     public void upBorderNext1() {
-        Radio chanel = new Radio();
+        Radio chanel = new Radio(0, 9);
 
         chanel.setChanel(9);
 
@@ -49,7 +49,7 @@ public class RadioTest {
     @Test
     //тест переключения каналов по убыванию
     public void shouldPreviousChanelIfPressPrevious1() {
-        Radio chanel = new Radio();
+        Radio chanel = new Radio(0, 9);
 
         chanel.setChanel(4);
 
@@ -62,7 +62,7 @@ public class RadioTest {
     @Test
     //тест на нижнюю границу
     public void lowBorderPrev1() {
-        Radio chanel = new Radio();
+        Radio chanel = new Radio(0, 9);
 
         chanel.setChanel(0);
 
@@ -75,7 +75,7 @@ public class RadioTest {
     @Test
     //тест на нижнюю границы каналов
     public void lowBorderPrev2() {
-        Radio chanel = new Radio();
+        Radio chanel = new Radio(0, 9);
 
         chanel.setChanel(-1);
 
@@ -88,7 +88,7 @@ public class RadioTest {
     @Test
     //тест на проверку доступнеость каналов
     public void shouldNewChanel1() {
-        Radio chanel = new Radio();
+        Radio chanel = new Radio(0, 9);
 
         chanel.setChanel(8);
 
@@ -101,7 +101,7 @@ public class RadioTest {
     @Test
     //тест на проверку доступнеость каналов
     public void shouldNewChanel2() {
-        Radio chanel = new Radio();
+        Radio chanel = new Radio(0, 9);
 
         chanel.setChanel(10);
 
@@ -115,12 +115,12 @@ public class RadioTest {
     @Test
     // тест на проверку текущего уровня громкости
     public void shouldSetCurrentVolume() {
-        Radio chanel = new Radio();
+        Volume sound = new Volume(0, 100);
 
-        chanel.setVolume(1);
+        sound.setVolume(40);
 
-        int expected = 1;
-        int actual = chanel.getCurrentVolume();
+        int expected = 40;
+        int actual = sound.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -128,12 +128,12 @@ public class RadioTest {
     @Test
     //тест переключения уровня громкости по возрастанию
     public void shouldHighVolumeIfPressIncrease() {
-        Radio chanel = new Radio();
+        Volume sound = new Volume(0, 100);
 
-        chanel.setVolume(5);
+        sound.setVolume(25);
 
-        int expected = 6;
-        int actual = chanel.increaseVolume();
+        int expected = 26;
+        int actual = sound.increaseVolume();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -141,12 +141,12 @@ public class RadioTest {
     @Test
     //тест на границу уровня громкости по возрастанию
     public void upBorderVolume() {
-        Radio chanel = new Radio();
+        Volume sound = new Volume(0,100);
 
-        chanel.setVolume(10);
+        sound.setVolume(100);
 
-        int expected = 10;
-        int actual = chanel.increaseVolume();
+        int expected = 100;
+        int actual = sound.increaseVolume();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -154,12 +154,12 @@ public class RadioTest {
     @Test
     //тест на переключение уровня громкости  по убыванию
     public void shouldLowVolumeIfPressDecrease1() {
-        Radio chanel = new Radio();
+        Volume sound = new Volume(0, 100);
 
-        chanel.setVolume(4);
+        sound.setVolume(4);
 
         int expected = 3;
-        int actual = chanel.decreaseVolume();
+        int actual = sound.decreaseVolume();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -168,12 +168,12 @@ public class RadioTest {
     ////тест на границу уровня громкости  по убыванию
     @Test
     public void lowBorderVolume1() {
-        Radio chanel = new Radio();
+        Volume sound = new Volume(0, 100);
 
-        chanel.setVolume(0);
+        sound.setVolume(0);
 
         int expected = 0;
-        int actual = chanel.decreaseVolume();
+        int actual = sound.decreaseVolume();
 
         Assertions.assertEquals(expected, actual);
     }
