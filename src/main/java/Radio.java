@@ -10,15 +10,6 @@ public class Radio {
     }
     //поле для запроса данных о текущем канале
 
-    public int maxChanel=9;
-    public int minChanel=10;
-    public int getMaxChanel(){
-        return maxChanel;
-    }
-    public int getMinChanel(){
-        return  minChanel;
-    }
-
 
     //метод для переключения каналов по возрастанию
     public int next() {

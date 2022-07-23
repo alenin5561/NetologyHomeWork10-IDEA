@@ -10,6 +10,7 @@ public class RadioTest {
         RadioChanel chanel = new RadioChanel(0, 24);
 
         Assertions.assertEquals(24, chanel.getMaxChanel());
+        Assertions.assertEquals(0,chanel.getMinChanel());
     }
 
     @Test
