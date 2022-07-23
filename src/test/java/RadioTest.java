@@ -178,20 +178,6 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    @Test
-    //тест на проверку выбора вручную уровней громкости
-    public void setNewVolume() {
-        Radio chanel = new Radio();
-
-        chanel.setVolume(8);
-
-        int expected = 8;
-        int actual = chanel.getCurrentVolume();
-
-        Assertions.assertEquals(expected, actual);
-
-
-    }
 
 }
 
