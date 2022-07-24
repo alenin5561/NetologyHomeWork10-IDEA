@@ -17,16 +17,16 @@ public class Volume {
     }
 
     //Создаем конструктор для установки новой границы уровня громкости
-    public Volume(int minSound, int maxSound) {
-        this.minVolume = minSound;
-        this.maxVolume = maxSound;
+    public Volume(int minVolume, int maxVolume) {
+        this.minVolume = minVolume;
+        this.maxVolume = maxVolume;
         this.currentVolume = currentVolume;
 
     }
 
     //метод для установки уровня громкости по возрастанию
     public int increaseVolume() {
-        if (currentVolume < 100) {
+        if (currentVolume < maxVolume) {
             currentVolume++;
         } else {
             return currentVolume = maxVolume;
@@ -36,11 +36,11 @@ public class Volume {
 
     //метод для установки уровня громкости по убыванию
     public int decreaseVolume() {
-        if (currentVolume < 100) {
+        if (currentVolume < maxVolume) {
             currentVolume--;
         }
-        if (currentVolume < 0) {
-            return minVolume = 0;
+        if (currentVolume < minVolume) {
+            return minVolume ;
         }
         return currentVolume;
     }

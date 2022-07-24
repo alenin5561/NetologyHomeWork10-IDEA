@@ -27,7 +27,7 @@ public class Radio {
         if (currentChanel < 9) {
             currentChanel++;
         } else {
-            return currentChanel = 0;
+            return  0;
         }
         return currentChanel;
     }
