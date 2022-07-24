@@ -28,7 +28,7 @@ public class RadioTest {
 
     @Test
     //тест переключения канала по возрастанию
-    public void shouldNextChanelIfPressNext1() {
+    public void shouldNextChanelIfPressNext() {
         Radio chanel = new Radio();
 
         chanel.setChanel(6);
@@ -41,7 +41,7 @@ public class RadioTest {
 
     //тест на верхнюю границу
     @Test
-    public void upBorderNext1() {
+    public void upBorderNext() {
         Radio chanel = new Radio();
 
         chanel.setChanel(9);
@@ -54,7 +54,7 @@ public class RadioTest {
 
     @Test
     //тест переключения каналов по убыванию
-    public void shouldPreviousChanelIfPressPrevious1() {
+    public void shouldPreviousChanelIfPressPrevious() {
         Radio chanel = new Radio();
 
         chanel.setChanel(4);
