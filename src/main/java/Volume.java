@@ -29,7 +29,7 @@ public class Volume {
         if (currentVolume < maxVolume) {
             currentVolume++;
         } else {
-            return currentVolume = maxVolume;
+            currentVolume = maxVolume;
         }
         return currentVolume;
     }
