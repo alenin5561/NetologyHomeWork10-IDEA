@@ -10,7 +10,7 @@ public class RadioTest {
         RadioChanel chanel = new RadioChanel(0, 24);
 
         Assertions.assertEquals(24, chanel.getMaxChanel());
-        Assertions.assertEquals(0,chanel.getMinChanel());
+        Assertions.assertEquals(0, chanel.getMinChanel());
     }
 
     @Test
@@ -24,8 +24,6 @@ public class RadioTest {
         int actual = chanel.getCurrentChanel();
 
         Assertions.assertEquals(expected, actual);
-
-
     }
 
     @Test
@@ -164,9 +162,9 @@ public class RadioTest {
     public void shouldLowVolumeIfPressDecrease1() {
         Volume sound = new Volume(0, 100);
 
-        sound.setVolume(4);
+        sound.setVolume(33);
 
-        int expected = 3;
+        int expected = 32;
         int actual = sound.decreaseVolume();
 
         Assertions.assertEquals(expected, actual);
@@ -185,8 +183,6 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
-
 }
 
 

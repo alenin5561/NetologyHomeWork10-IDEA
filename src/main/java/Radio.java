@@ -1,7 +1,7 @@
 
 public class Radio {
 
-  public int currentChanel;
+    private int currentChanel;
 
 
     public int getCurrentChanel() {
@@ -9,6 +9,17 @@ public class Radio {
         return currentChanel;
     }
     //поле для запроса данных о текущем канале
+
+    //объявляем поле для переключения между каналами которые находяться в диапозоне от 0 до 9
+    public void setChanel(int newChanel) {
+        if (newChanel < 0) {
+            return;
+        }
+        if (newChanel > 9) {
+            return;
+        }
+        currentChanel = newChanel;
+    }
 
 
     //метод для переключения каналов по возрастанию
@@ -31,18 +42,6 @@ public class Radio {
             return 9;
         }
         return currentChanel;
-    }
-
-
-    //объявляем поле для переключения между каналами которые находяться в диапозоне от 0 до 9
-    public void setChanel(int newChanel) {
-        if (newChanel < 0) {
-            return;
-        }
-        if (newChanel > 9) {
-            return;
-        }
-        currentChanel = newChanel;
     }
 
 

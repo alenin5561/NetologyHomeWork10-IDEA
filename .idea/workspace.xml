@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c43a0b9d-9e0a-410e-933e-4ff10f228cca" name="Changes" comment="Модификация системы">
+    <list default="true" id="c43a0b9d-9e0a-410e-933e-4ff10f228cca" name="Changes" comment="Модификация (Отформотирован код)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Radio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Radio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RadioChanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RadioChanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Volume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Volume.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RadioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RadioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -241,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658551814028</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Модификация системы">
+      <created>1658552062561</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1658552062561</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,6 +309,7 @@
     <MESSAGE value="Радио работает (Покрытие кода)" />
     <MESSAGE value="Радио работает (Покрытие 100%)" />
     <MESSAGE value="Модификация системы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Модификация системы" />
+    <MESSAGE value="Модификация (Отформотирован код)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Модификация (Отформотирован код)" />
   </component>
 </project>
