@@ -27,7 +27,7 @@ public class Radio {
         if (currentChanel < 9) {
             currentChanel++;
         } else {
-            return  0;
+            return 0;
         }
         return currentChanel;
     }
@@ -35,14 +35,11 @@ public class Radio {
 
     //метод для переключения каналов по убыванию
     public int prev() {
-        if (currentChanel < 9) {
+        if (currentChanel > 0) {
             currentChanel--;
-        }
-        if (currentChanel < 0) {
-            return 9;
+        } else {
+            currentChanel = 9;
         }
         return currentChanel;
     }
-
-
 }

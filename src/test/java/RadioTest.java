@@ -31,9 +31,9 @@ public class RadioTest {
     public void shouldNextChanelIfPressNext() {
         Radio chanel = new Radio();
 
-        chanel.setChanel(6);
+        chanel.setChanel(3);
 
-        int expected = 7;
+        int expected = 4;
         int actual = chanel.next();
 
         Assertions.assertEquals(expected, actual);
@@ -57,9 +57,9 @@ public class RadioTest {
     public void shouldPreviousChanelIfPressPrevious() {
         Radio chanel = new Radio();
 
-        chanel.setChanel(4);
+        chanel.setChanel(9);
 
-        int expected = 3;
+        int expected = 8;
         int actual = chanel.prev();
 
         Assertions.assertEquals(expected, actual);
@@ -119,7 +119,7 @@ public class RadioTest {
 
 
     @Test
-    // тест на проверку текущего уровня громкости
+    // тест на проверку нового уровня громкости
     public void shouldSetCurrentVolume() {
         Volume sound = new Volume(0, 100);
 

@@ -36,11 +36,10 @@ public class Volume {
 
     //метод для установки уровня громкости по убыванию
     public int decreaseVolume() {
-        if (currentVolume < maxVolume) {
+        if (currentVolume > 0) {
             currentVolume--;
-        }
-        if (currentVolume < minVolume) {
-            return minVolume ;
+        } else {
+            currentVolume = minVolume;
         }
         return currentVolume;
     }
