@@ -79,7 +79,7 @@ public class RadioTest {
     }
 
     @Test
-    //тест на нижнюю границы каналов
+    //тест на установку канала ниже границы
     public void lowBorderPrev2() {
         Radio chanel = new Radio();
 
