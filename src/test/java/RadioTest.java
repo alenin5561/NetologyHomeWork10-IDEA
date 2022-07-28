@@ -5,18 +5,9 @@ import org.junit.jupiter.api.Test;
 public class RadioTest {
 
     @Test
-    //тест на установку нового количества каналов
-    public void shouldSetNewChanelNumber() {
-        RadioChanel chanel = new RadioChanel(0, 24);
-
-        Assertions.assertEquals(24, chanel.getMaxChanel());
-        Assertions.assertEquals(0, chanel.getMinChanel());
-    }
-
-    @Test
     // тест на проверку текущего канала
     public void shouldSetCurrentChanel() {
-        Radio chanel = new Radio();
+        Radio chanel = new Radio(10);
 
         chanel.setChanel(2);
 
@@ -121,12 +112,12 @@ public class RadioTest {
     @Test
     // тест на проверку нового уровня громкости
     public void shouldSetCurrentVolume() {
-        Volume sound = new Volume(0, 100);
+        Radio chanel = new Radio();
 
-        sound.setVolume(40);
+        chanel.setVolume(40);
 
         int expected = 40;
-        int actual = sound.getCurrentVolume();
+        int actual = chanel.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -134,12 +125,12 @@ public class RadioTest {
     @Test
     //тест переключения уровня громкости по возрастанию
     public void shouldHighVolumeIfPressIncrease() {
-        Volume sound = new Volume(0, 100);
+        Radio chanel = new Radio();
 
-        sound.setVolume(25);
+        chanel.setVolume(25);
 
         int expected = 26;
-        int actual = sound.increaseVolume();
+        int actual = chanel.increaseVolume();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -147,12 +138,12 @@ public class RadioTest {
     @Test
     //тест на границу уровня громкости по возрастанию
     public void upBorderVolume() {
-        Volume sound = new Volume(0, 100);
+        Radio chanel = new Radio();
 
-        sound.setVolume(100);
+        chanel.setVolume(100);
 
         int expected = 100;
-        int actual = sound.increaseVolume();
+        int actual = chanel.increaseVolume();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -160,12 +151,12 @@ public class RadioTest {
     @Test
     //тест на переключение уровня громкости  по убыванию
     public void shouldLowVolumeIfPressDecrease1() {
-        Volume sound = new Volume(0, 100);
+        Radio chanel = new Radio();
 
-        sound.setVolume(33);
+        chanel.setVolume(33);
 
         int expected = 32;
-        int actual = sound.decreaseVolume();
+        int actual = chanel.decreaseVolume();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -174,12 +165,12 @@ public class RadioTest {
     ////тест на границу уровня громкости  по убыванию
     @Test
     public void lowBorderVolume1() {
-        Volume sound = new Volume(0, 100);
+        Radio chanel = new Radio();
 
-        sound.setVolume(0);
+        chanel.setVolume(0);
 
         int expected = 0;
-        int actual = sound.decreaseVolume();
+        int actual = chanel.decreaseVolume();
 
         Assertions.assertEquals(expected, actual);
     }
