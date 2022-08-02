@@ -1,8 +1,10 @@
 
 public class Radio {
 
-int currentChanel;
-    //объявлем поле для хранения текущего прослушиваемого канала
+    private int currentChanel;
+
+    private int currentVolume;
+    private int chanels;
 
     public int getCurrentChanel() {
 
@@ -16,31 +18,6 @@ int currentChanel;
     }
     //поле для запроса данных о текущем уровне громкости
 
-    //поле всех каналов
-
-    //метод для переключения каналов по возрастанию
-    public int next() {
-        if (currentChanel < 9) {
-            currentChanel++;
-        } else {
-            return currentChanel = 0;
-        }
-        return currentChanel;
-    }
-
-
-    //метод для переключения каналов по убыванию
-    public int prev() {
-        if (currentChanel < 9) {
-            currentChanel--;
-        }
-        if (currentChanel < 0) {
-            return 9;
-        }
-        return currentChanel;
-    }
-
-
     //объявляем поле для переключения между каналами которые находяться в диапозоне от 0 до 9
     public void setChanel(int newChanel) {
         if (newChanel < 0) {
@@ -52,36 +29,61 @@ int currentChanel;
         currentChanel = newChanel;
     }
 
+    //объявляем поле для установки уровня громкости
+    public void setVolume(int newVolume) {
+        currentVolume = newVolume;
+    }
 
-    public int currentVolume;
-    //поле для текущей уровня громкости
-    public int maxVolume = 10;
-    public int minVolume = 0;
+    //конструктор с каналами котороые мы задаем по умолчанию
+    public Radio() {
+        this.chanels = 10;
+    }
+
+    //конструктор с установкой каналов котороые мы хотим установить и которые будут достпуны в этом диапозоне
+    public Radio(int chanels) {
+        this.chanels = chanels;
+    }
+
+
+    //метод для переключения каналов по возрастанию
+    public int next() {
+        if (currentChanel < chanels - 1) {
+            currentChanel++;
+        } else {
+            currentChanel = 0;
+        }
+        return currentChanel;
+    }
+
+
+    //метод для переключения каналов по убыванию
+    public int prev() {
+        if (currentChanel > 0) {
+            currentChanel--;
+        } else {
+            currentChanel = chanels - 1;
+        }
+        return currentChanel;
+    }
 
     //метод для установки уровня громкости по возрастанию
     public int increaseVolume() {
-        if (currentVolume < 10) {
+        if (currentVolume < 100) {
             currentVolume++;
-        }else {
-            return currentVolume = maxVolume;
+        } else {
+            currentVolume = 100;
         }
         return currentVolume;
     }
 
     //метод для установки уровня громкости по убыванию
     public int decreaseVolume() {
-        if (currentVolume < 10) {
+        if (currentVolume > 0) {
             currentVolume--;
-        }
-        if (currentVolume < 0) {
-            return minVolume= 0;
+        } else {
+            currentVolume = 0;
         }
         return currentVolume;
-    }
-
-    //объявляем поле для установки уровня громкости в диапозоне от 0 до 9
-    public void setVolume(int newVolume) {
-        currentVolume = newVolume;
     }
 
 }

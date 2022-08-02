@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c43a0b9d-9e0a-410e-933e-4ff10f228cca" name="Changes" comment="Радио работает (Покрытие 100%)" />
+    <list default="true" id="c43a0b9d-9e0a-410e-933e-4ff10f228cca" name="Changes" comment="Модификация ( Доработка )">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +20,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="flexible" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -38,7 +58,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RunAnythingCache">
@@ -56,11 +77,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioTest.shouldNewVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RadioTest.shouldPreviousChanelIfPressPrevious" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NetologyHomework10" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RadioTest" />
-      <option name="METHOD_NAME" value="shouldNewVolume" />
+      <option name="METHOD_NAME" value="shouldPreviousChanelIfPressPrevious" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,10 +120,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RadioTest" />
+        <item itemvalue="JUnit.RadioTest.shouldPreviousChanelIfPressPrevious" />
         <item itemvalue="JUnit.RadioTest.upBorderVolume" />
         <item itemvalue="JUnit.RadioTest.upBorderNext2" />
         <item itemvalue="JUnit.RadioTest.upBorderNext1" />
-        <item itemvalue="JUnit.RadioTest.shouldNewVolume" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +220,91 @@
       <option name="project" value="LOCAL" />
       <updated>1658520506003</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Радио работает (Покрытие 100%)">
+      <created>1658547422589</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1658547422589</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Модификация системы">
+      <created>1658549014068</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1658549014068</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Модификация системы">
+      <created>1658551814028</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1658551814028</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Модификация системы">
+      <created>1658552062561</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1658552062561</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Модификация (Отформотирован код)">
+      <created>1658666672771</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1658666672771</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Модификация (Отформотирован код)">
+      <created>1658669434445</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1658669434445</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Модификация (Отформотирован код)">
+      <created>1658669560264</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1658669560264</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Модификация (Отформотирован код)">
+      <created>1658671747071</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1658671747071</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Модификация (Отформотирован код)">
+      <created>1658683583961</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1658683583961</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Модификация (Отформотирован код)">
+      <created>1658684202808</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1658684202808</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Модификация (Отформотирован код)">
+      <created>1658825338778</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1658825338778</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Модификация ( Доработка )">
+      <created>1659031610727</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1659031610727</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,7 +312,44 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="flexible" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -219,6 +361,9 @@
     <MESSAGE value="Радио работает (Настройка JAcoco)" />
     <MESSAGE value="Радио работает (Покрытие кода)" />
     <MESSAGE value="Радио работает (Покрытие 100%)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Радио работает (Покрытие 100%)" />
+    <MESSAGE value="Модификация системы" />
+    <MESSAGE value="Модификация (Отформотирован код)" />
+    <MESSAGE value="Модификация ( Доработка )" />
+    <option name="LAST_COMMIT_MESSAGE" value="Модификация ( Доработка )" />
   </component>
 </project>
