@@ -29,6 +29,11 @@ public class Radio {
         currentChanel = newChanel;
     }
 
+    //объявляем поле для установки уровня громкости
+    public void setVolume(int newVolume) {
+        currentVolume = newVolume;
+    }
+
     //конструктор с каналами котороые мы задаем по умолчанию
     public Radio() {
         this.chanels = 10;
@@ -39,10 +44,6 @@ public class Radio {
         this.chanels = chanels;
     }
 
-    //объявляем поле для установки уровня громкости
-    public void setVolume(int newVolume) {
-        currentVolume = newVolume;
-    }
 
     //метод для переключения каналов по возрастанию
     public int next() {
